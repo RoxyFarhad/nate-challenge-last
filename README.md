@@ -6,6 +6,24 @@ The requirements of this challenge was to build a full-stack application where a
 
 As this was mainly a back-end project, I didn't focus at all on the styling of the frontend of the project, but rather on its functionality. 
 
+Setup
+-------
+
+There are 2 different repos from github that store the backend and frontend code. 
+
+1. run git clone https://github.com/RoxyFarhad/nate-challenge-last
+2. cd nate-challenge-last
+3. git clone https://github.com/RoxyFarhad/nate_frontend client 
+-- N.b. you must clone into the repo into a directory named client for the scripts to run 
+4. cd client 
+5. npm install
+6. cd .. 
+(at this point you should be in nate-challenge-last)
+7. yarn install
+8. yarn dev
+
+Once all the modules are downloaded, you  run  `yarn dev` to start the dev server
+
 Backend
 --------
 
@@ -91,6 +109,8 @@ I tested the backend service using chai and mocha. I ran a couple of tests:
 1. Tested the correct number for a word was returned 
 2. The most frequent and length sort functions were correctly implemented 
 
+To test the backend be in `nate-challenge-last` and run yarn test
+
 Limitations
 ------------
 
@@ -98,7 +118,7 @@ The hardest thing to test was for long documents if the correct word counts were
 
 If I had more time I would work to improve sorting, more testing and improve styling. 
 
-The Test Stack
+The Tech Stack
 ---------------
 
 I chose nodejs and react as my stack because they is a lot of documentation on how to use them together, but more importantly there are extremely popular choices for modern web development. I also have had most of my experience in both the backend and frontend in noejs and react, which made the project easier to undertake. 
